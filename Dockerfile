@@ -22,7 +22,7 @@ RUN apt-get update && \
     tar \
     util-linux \
     wget && \
-  mkdir -p /work &&
+  mkdir -p /work && \
   rm -rf /var/lib/apt/lists/*
 
 WORKDIR /work
