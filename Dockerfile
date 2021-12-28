@@ -7,16 +7,22 @@ RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get upgrade -qqy && \
   DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     apt-utils \
+    build-essential \
     ca-certificates \
     curl \
     dirmngr \
+    dnsutils \
     findutils \
     gpg \
-    pigz \
     jq \
+    pigz \
+    pkg-config \
+    sudo \
     rename \
     tar \
-    util-linux && \
-  mkdir -p /work
+    util-linux \
+    wget && \
+  mkdir -p /work &&
+  rm -rf /var/lib/apt/lists/*
 
 WORKDIR /work
