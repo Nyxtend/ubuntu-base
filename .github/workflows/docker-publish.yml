@@ -89,7 +89,7 @@ jobs:
               {
                 "event_type": "build_application",
                 "client_payload": {
-                  "dispatches_topic": "update_k8s_config",
+                  "dispatches_topic": "update_dependent_images",
                   "body": {
                     "repo": "${{ github.repository }}",
                     "new_container": "ghcr.io/nyxtend/dogecoin-container:${{ github.sha }}"
