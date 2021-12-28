@@ -88,6 +88,7 @@ jobs:
             https://api.github.com/repos/Nyxtend/github-actions-dispatches-router/dispatches \
               --data @- <<-ENDOFDOC
               {
+                "event_type": "build_application",
                 "client_payload": {
                   "dispatches_topics": ["update_dependent_images"],
                   "body": {
