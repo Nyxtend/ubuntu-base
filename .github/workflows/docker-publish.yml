@@ -88,7 +88,7 @@ jobs:
               --data @- <<-ENDOFDOC
               {
                 "client_payload": {
-                  "dispatches_topic": "update_dependent_images",
+                  "dispatches_topics": ["update_dependent_images"],
                   "body": {
                     "repo": "${{ github.repository }}",
                     "new_container": "ghcr.io/nyxtend/dogecoin-container:${{ github.sha }}"
